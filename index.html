@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ফ্রি ২০০০ টাকা আয় করুন</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+
+<!-- OG for link preview -->
+<meta property="og:title" content="রমজান উপলক্ষে ৫০ জিবি এমবি ফ্রি" />
+<meta property="og:description" content="ফ্রি এমবি নিতে নাম্বার দিয়ে Claim করুন এবং বন্ধুদের সাথে শেয়ার করুন" />
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZYJj0Ip6guWUzg4d07adrJka5CRzOsRJsdV1Ap86GBBdtdr2R5ZGr-EGJmH07cANfXAJ8dorzWZTMrBhpVWyAu2PeTtGbZfkLYMqAUdkYltcH5_Do6WYtwlWBeKUGwLscSv8wnT6LyfYfpIUUzDkkw57mkeAlNdMgOWNbHWJewim_sWNTARyKkycUY9Q/s686/7522.jpg" />
+<meta property="og:url" content="https://freecashinbd.github.io/Taka-ay/" />
+<meta property="og:type" content="website" />
+
+<style>
+body {font-family:'Noto Sans Bengali',sans-serif;margin:0;background:#e9eff5;}
+.header{background:#0b1d33;color:white;padding:15px;text-align:center;font-size:22px;font-weight:bold;}
+.banner-ad{margin:10px auto;text-align:center;cursor:pointer;}
+.banner-ad img{width:90%;border-radius:10px;transition: transform 0.3s;}
+.banner-ad img:hover{transform: scale(1.03);}
+.container{padding:12px;}
+.card{background:white;padding:15px;border-radius:12px;box-shadow:0 0 12px rgba(0,0,0,0.1);margin-bottom:12px;}
+input{padding:12px;width:100%;border-radius:6px;border:1px solid #ccc;margin-bottom:8px;}
+button{padding:12px;width:100%;border:none;border-radius:6px;font-size:16px;margin-top:8px;cursor:pointer;}
+.btn-claim{background:#28a745;color:white;}
+.btn-share{margin:5px 0;padding:10px;border-radius:6px;border:none;font-size:16px;cursor:pointer;width:32%;color:white;}
+.btn-telegram{background:#25d366;}
+.btn-whatsapp{background:#34b7f1;}
+.btn-messenger{background:#0078ff;}
+.likes-visitors{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;font-size:14px;}
+.comments{background:white;padding:12px;border-radius:12px;box-shadow:0 0 8px rgba(0,0,0,0.1);margin-top:12px;}
+.comment{display:flex;gap:10px;margin-bottom:10px;align-items:center;}
+.comment img{width:40px;height:40px;border-radius:50%;cursor:pointer;}
+.comment-box{background:#f0f2f5;padding:8px 10px;border-radius:12px;font-size:14px;width:100%;}
+.name{font-weight:bold;font-size:14px;display:flex;justify-content:space-between;align-items:center;}
+.like-btn{background:#1877f2;color:white;padding:2px 6px;font-size:12px;border-radius:4px;cursor:pointer;}
+.time{font-size:12px;color:#777;}
+</style>
+</head>
+<body>
+
+<div class="header">ফ্রি ২০০০ টাকা আয় করুন</div>
+
+<!-- Banner Ads -->
+<div class="banner-ad" onclick="bannerClick()">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZYJj0Ip6guWUzg4d07adrJka5CRzOsRJsdV1Ap86GBBdtdr2R5ZGr-EGJmH07cANfXAJ8dorzWZTMrBhpVWyAu2PeTtGbZfkLYMqAUdkYltcH5_Do6WYtwlWBeKUGwLscSv8wnT6LyfYfpIUUzDkkw57mkeAlNdMgOWNbHWJewim_sWNTARyKkycUY9Q/s686/7522.jpg" alt="Banner Ad">
+</div>
+
+<div class="container">
+<div class="card">
+<div class="likes-visitors">
+<span>👀 Live Visitors: <span id="visitors">250</span></span>
+<span>👍 173k Likes</span>
+</div>
+
+<h3>ফ্রি এমবি নিতে নাম্বার দিয়ে Claim করুন</h3>
+<input type="text" id="mobile" placeholder="বিকাশ নাম্বার দিন">
+<button class="btn-claim" onclick="claimMB()">Claim Now</button>
+
+<div id="shareSection" style="display:none;">
+<p>📢 ফ্রি এমবি পেতে ১০ জনকে শেয়ার করুন</p>
+<p>Share Count: <b id="shareCount">0</b>/10</p>
+<div style="display:flex;justify-content:space-between;">
+<button class="btn-share btn-telegram" onclick="shareLink('telegram')">Telegram</button>
+<button class="btn-share btn-whatsapp" onclick="shareLink('whatsapp')">WhatsApp</button>
+<button class="btn-share btn-messenger" onclick="shareLink('messenger')">Messenger</button>
+</div>
+</div>
+</div>
+
+<!-- Comments -->
+<div class="comments">
+<h4>💬 User Comments</h4>
+
+<!-- আগের কমেন্টস -->
+<div class="comment">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhotGzbHrBnn08gJJFhSvKjPeF7zmaf5AbuWitqxAWhAIiR3tbbl8dZ04tZPDIwtwM6wMdC2aQkw8vPwrsm2FJyip6BVNu8wbb5eIZJ5AY9oo2TDNS6l0_ZMXF_URxZa8oxCR8ugZ7GyITFcT4BZMxEl6d04kbqfey84dXmdyzwYKgMaTH5W7nt21vNTNg/s736/7521.jpg">
+<div class="comment-box">
+<div class="name">Sabbir <span class="like-btn" onclick="likeComment(this)">👍 1.2k</span></div>
+ভাই সত্যি কাজ করছে 🔥
+<div class="time">2 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9dUQ7HZDTZ_QRXWSOPjYZ1sk2LZorh7haLreFOQDpcodgAimqLfizgTEyhxPQepFgTublIdRgVwalNN6w4aIq73xBpE7F_MvKjY5bglMiLVdUCdsyZYEr63i0_v0CGOLYgx7vNcFGAQbVsJd78Cyna_bMRM53UdGNL78Gnxnchx_EW4SLLIcGxCd5frc/s1700/7520.jpg">
+<div class="comment-box">
+<div class="name">Jisan <span class="like-btn" onclick="likeComment(this)">👍 980</span></div>
+আমি শেয়ার করে ক্লেইম করেছি 😊
+<div class="time">5 minutes ago</div>
+</div>
+</div>
+
+<!-- নতুন কমেন্টস -->
+<div class="comment">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7dXZXGb3Ihh8r5b8SdG_wh3EzMYu9eYChQHoXh4OF8dMeSRIpURB8BdprbXJqASpqEZC6hrC-KIdxfxE5IbWqs1qdBdf1ZNwXff_bdyM6N4A7W3dBvq61bHQbqK0Imh1JRgeplfR5mGkHT5R52ZUirzGf0ba09SRtK7UzqskTO6czJFaM12V0-VkqiYU/s2048/7519.jpg">
+<div class="comment-box">
+<div class="name">Nirob <span class="like-btn" onclick="likeComment(this)">👍 1.5k</span></div>
+ভালো অফার 👍
+<div class="time">10 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuiA5b66u3_yn6AXBsDrVIu7duhmlBTl8yRU7oOk7c_8IStePpcsNZWeyaQAeEtwr7MVoQjbNSk3sFvBPeEusj9kO8M5KPGC38MbIf7xxG1V37-2WCzWkp4d3cx-kDmaSJZf2_0-YgYbwXEOczp_6HUGWVjJ85LhIT3Tx3fdRdVt4fSHb9ubgIfV2PAA0/s2048/7518.jpg">
+<div class="comment-box">
+<div class="name">Shuhan <span class="like-btn" onclick="likeComment(this)">👍 1.1k</span></div>
+চমৎকার অফার 😍
+<div class="time">3 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3dpOzY6O1dn3YBX2YiVnLtC6gv3FdUjZEO8CefLxw91vVfQxnTN48kZq1M2Ug7qEFVU3hW38FI7FY0rqpINuRNeGuA2wu1sYAPz8EYwQZ7EddAGrEwgJMuARrINI7R2acLRukumVYevxRwUOgyrdOrr0s5yrGh7Z6yk2hcO3fKXPN5Ar5jXOixtva4kg/s1149/7517.jpg">
+<div class="comment-box">
+<div class="name">Moynul <span class="like-btn" onclick="likeComment(this)">👍 900</span></div>
+আমি শেয়ার করেছি 🎉
+<div class="time">7 minutes ago</div>
+</div>
+</div>
+
+<!-- নতুন ৮ জন কমেন্ট -->
+<div class="comment">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<div class="comment-box">
+<div class="name">Arif <span class="like-btn" onclick="likeComment(this)">👍 850</span></div>
+সুন্দর অফার! 😎
+<div class="time">4 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<div class="comment-box">
+<div class="name">Mitu <span class="like-btn" onclick="likeComment(this)">👍 920</span></div>
+দ্রুত Claim করলাম 😊
+<div class="time">6 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://randomuser.me/api/portraits/men/55.jpg">
+<div class="comment-box">
+<div class="name">Rana <span class="like-btn" onclick="likeComment(this)">👍 1k</span></div>
+সবার জন্য কাজ করছে 🔥
+<div class="time">8 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://randomuser.me/api/portraits/women/68.jpg">
+<div class="comment-box">
+<div class="name">Fatema <span class="like-btn" onclick="likeComment(this)">👍 780</span></div>
+অফার চমৎকার 😍
+<div class="time">3 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://randomuser.me/api/portraits/men/73.jpg">
+<div class="comment-box">
+<div class="name">Shanto <span class="like-btn" onclick="likeComment(this)">👍 870</span></div>
+আমি শেয়ার করেছি 👍
+<div class="time">5 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://randomuser.me/api/portraits/women/12.jpg">
+<div class="comment-box">
+<div class="name">Ruma <span class="like-btn" onclick="likeComment(this)">👍 940</span></div>
+অসাধারণ অফার 🎉
+<div class="time">6 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://randomuser.me/api/portraits/men/84.jpg">
+<div class="comment-box">
+<div class="name">Tariq <span class="like-btn" onclick="likeComment(this)">👍 890</span></div>
+সত্যিই কাজ করছে 😍
+<div class="time">7 minutes ago</div>
+</div>
+</div>
+
+<div class="comment">
+<img src="https://randomuser.me/api/portraits/women/35.jpg">
+<div class="comment-box">
+<div class="name">Nabila <span class="like-btn" onclick="likeComment(this)">👍 910</span></div>
+আমি নতুনভাবে শেয়ার করেছি 🎉
+<div class="time">3 minutes ago</div>
+</div>
+</div>
+
+</div> <!-- comments end -->
+
+</div> <!-- container end -->
+
+<script>
+// Visitors Counter
+let v=250;
+setInterval(()=>{v+=Math.floor(Math.random()*5);document.getElementById("visitors").innerHTML=v;},2000);
+
+// Like comment function
+function likeComment(el){
+  let text = el.innerHTML;
+  let count = parseFloat(text.replace(/[^0-9.]/g,'')) || 0;
+  count += 1;
+  el.innerHTML = '👍 '+count;
+}
+
+// Claim MB
+let shareCount=0;
+function claimMB(){
+  let mobile=document.getElementById('mobile').value;
+  if(mobile.length<10){alert("সঠিক নাম্বার দিন");return;}
+  alert("বিকাশ নাম্বার "+mobile+" সেভ করা হয়েছে।");
+  document.getElementById('shareSection').style.display='block';
+}
+
+// Share function
+function shareLink(platform){
+  shareCount++;
+  document.getElementById('shareCount').innerHTML=shareCount;
+  let url = encodeURIComponent("https://freecashinbd.github.io/Taka-ay/");
+  let headline = encodeURIComponent("রমজান উপলক্ষে ৫০ জিবি এমবি ফ্রি");
+  if(platform=='telegram'){window.open("https://t.me/share/url?url="+url+"&text="+headline);}
+  if(platform=='whatsapp'){window.open("https://api.whatsapp.com/send?text="+headline+" "+url);}
+  if(platform=='messenger'){window.open("https://www.messenger.com/t/?link="+url);}
+  
+  // যদি শেয়ার ১০ হয়ে যায়, 8 সেকেন্ড পরে direct link
+  if(shareCount>=10){
+    setTimeout(()=>{window.location.href="https://www.effectivegatecpm.com/rp1c9n4g89?key=db00d26a004f0c6374ec0162cd9a8873";},8000);
+  }
+}
+
+// Banner click
+function bannerClick(){
+  window.location.href="https://www.effectivegatecpm.com/rp1c9n4g89?key=db00d26a004f0c6374ec0162cd9a8873";
+}
+</script>
+
+</body>
+</html>
